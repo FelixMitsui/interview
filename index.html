@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width， initial-scale=1.0">
+    <title>Personal Design Website</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--gloal design-->
+    <div class="jump-bar"></div>
+    <i class='bx bxs-to-top' onclick="handleScroll()"></i>
+    <div class="expand-img">
+        <figure>
+            <img id="project-img" alt="">
+        </figure>
+        <div>
+            <i class='bx bx-x-circle' onclick="CollapseImage()"></i>
+        </div>
+    </div>
+    <!-- Header design -->
+    <header class="header">
+        <h1><a href="#" class="header-logo">Personal Design</a></h1>
+        <nav class="header-navbar" id="header-navbar">
+            <ul>
+                <li><a class="navbar-link active" onclick="handleFocus(this)" href="#home">Home</a></li>
+                <li><a class="navbar-link" onclick="handleFocus(this)" href="#about">About</a></li>
+                <li> <a class="navbar-link" onclick="handleFocus(this)" href="#project">Project</a></li>
+            </ul>
+        </nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>您好，我是Felix</h3>
+            <div class="typing-content">
+                <h1 id="typing-effect"></h1>
+                <h1 class="typing-flashing">|</h1>
+            </div>
+            <h2>本站構建為HTML/CSS/JavaScript/JQuery</h2>
+            <hr>
+            <h2>主要作品應用</h2>
+            <div class="text-rotate">
+                <h3>React</h3>
+            </div>
+            <div class="text-rotate">
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="text-rotate">
+                <h3>Nodejs</h3>
+            </div>
+            <div class="text-rotate">
+                <h3>MongoDB</h3>
+            </div>
+            </h3>
+            <div class="social-media">
+                <a href="https://github.com/FelixMitsui/wave-sight/tree/main" target="_blank">
+                    <i class='bx bxl-github'></i></a>
+                <a href="https://codesandbox.io/u/felix_hong" target="_blank">
+                    <i class='bx bxl-codepen'></i></a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="front"><img
+                        src="https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80">
+                </div>
+                <div class="back"><img
+                        src="https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80">
+                </div>
+                <div class="left"><img
+                        src="https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80">
+                </div>
+                <div class="right"><img
+                        src="https://images.unsplash.com/photo-1663254743932-49190d0ee975?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+                </div>
+                <div class="top"><img
+                        src="https://plus.unsplash.com/premium_photo-1681433345510-5a4cf1d094d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1503&q=80">
+                </div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <h2>為何開始寫程式?</h2>
+            <p>
+                念書時，有跟同學用C#寫過遊戲，不過礙於建模，
+                就沒有繼續走這條路，接著沒有多想什麼就這
+                樣工作數年．直到近期，看了一些網頁程式相關
+                的書籍，雖然很久沒有寫程式，但是，在看程式
+                範例時，不會覺得難懂，反而覺得有趣，接著就
+                開始建立了興趣．
+            </p>
+            <h2>為何說目標是網頁開發而不是前後端?</h2>
+            <p>
+                前後端都是撰寫程式的過程，所以不會特別要求自己一定要
+                定位在某個特定位置，差別只在於本身對於前端的適性較高,
+                因為本身對於色彩，佈局的感官比較敏銳，所以前端方面的
+                適性會比較符合，不過，後端的相關知識也是必須的．
+            </p>
+            <h2>對自己有甚麼期許?</h2>
+            <p>
+                學習更多新的技術，希望能夠充分掌握複雜網站的整個建構流程．
+                這對於團隊溝通上，能減少障礙，甚至能給予團隊較佳的決策．
+            </p>
+            <h2>有什麼作品?</h2>
+            <p>
+                目前設計了一個服飾購物網站，前端架設在Github,後端架設
+                在Heroku,主要架構為React Hooks和Bootsrap，後端搭配
+                Nodejs連接MongoDb做資料請求，細節請見作品。
+            </p>
+        </div>
+        <figure class="ball">
+            <span class="iris"></span>
+        </figure>
+    </section>
+    <section class="project" id="project">
+        <div class="project-content">
+            <h1>Project</h1>
+            <div class="project-link">
+                <h2><a href="https://felixmitsui.github.io/wave-sight/" target="_blank">作品連結</a></h2>
+                <i class='bx bx-pointer'></i>
+                <p>帳號:guest006@gmail.com<br>密碼:azure006006</p>
+            </div>
+            <h2>Wave Sight</h2>
+            <div class="project-carousel">
+                <button id="left" onclick="carouselFirst.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-left'></i></button>
+                <button id="right" onclick="carouselFirst.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-right'></i></button>
+                <div id="carousel-first" class="carousel-wrap">
+                    <figure>
+                        <img onclick="expandImage(this,event)" src="./images/2023-05-02-011628.png" alt="首頁">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this,event)" src="./images/2023-05-02-011749.png" alt="商品分頁">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012100.png" alt="購物車">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012247.png" alt="用戶管理">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012348.png" alt="商品建立">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012422.png" alt="商品管理">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012521.png" alt="商品管理">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-02-012634.png" alt="商品管理">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/2023-05-22-005342.png" alt="商品管理">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this,event)" src="./images/2023-05-22-005528.png" alt="商品管理">
+                    </figure>
+                </div>
+            </div>
+            <h2>Infinite Hoisting</h2>
+            <div class="project-carousel">
+                <button id="left" onclick="carouselSecond.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-left'></i></button>
+                <button id="right" onclick="carouselSecond.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-right'></i></button>
+                <div id="carousel-second" class="carousel-wrap">
+                    <figure>
+                        <img onclick="expandImage(this,event)" src="./images/NH/2023-07-01-194447.png" alt="">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this,event)" src="./images/NH/2023-07-01-194630.png" alt="">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/NH/2023-07-01-194709.png" alt="">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(this)" src="./images/NH/2023-07-01-194829.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="jumpBar.js"></script>
+</body>
+
+</html>

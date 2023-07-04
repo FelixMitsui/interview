@@ -1,0 +1,50 @@
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes flashing {
+    0% {
+        display: block;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes text-rotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(45deg);
+    }
+
+    100% {
+        transform: perspective(500px) rotateX(0deg);
+    }
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: translateX(-55%) translateY(-20%);
+    }
+
+    50% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-55%) translateY(-20%);
+    }
+}

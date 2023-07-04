@@ -1,0 +1,73 @@
+@keyframes move-eye-skew {
+    0%, 20% {
+        transform: none;
+    }
+
+    20%, 45% {
+        transform: translateX(-20px) translateY(2px) scale(0.95);
+    }
+
+    50%, 60% {
+        transform: none;
+    }
+
+    60%, 85% {
+        transform: translateX(20px) translateY(2px) scale(0.95);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.ball {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px black;
+    grid-column: 10/13;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(#ffffff 15%, #e5e5e5 50%, #9d9d9d 90%);
+
+}
+
+.iris {
+    width: 40%;
+    height: 40%;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 45% 5%, #cbfcff, #45ddff, #13dafd);
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    animation: move-eye-skew 5s ease-out infinite;
+}
+
+.iris:hover {
+    animation-play-state: paused
+}
+
+.iris:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 50%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
+}
+
+.iris:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 50%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
+}
