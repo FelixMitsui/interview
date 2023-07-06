@@ -40,15 +40,16 @@
     width: 200px;
     height: 200px;
     perspective: 1000px;
-    perspective-origin: 150% -400px;
-    margin: 3rem 5rem 0;
+    perspective-origin: 0% -150%;
+    margin: 3rem 3rem 0;
     grid-column: 11/13;
 
 }
 
 .box {
+    position: relative;
     transform-style: preserve-3d;
-    animation: slide-in 4s ease forwards, cube-rotate 10s infinite ease 2s;
+    animation: slide-in 4s ease forwards, cube-rotate 10s ease infinite;
 }
 
 .box:hover {
@@ -59,11 +60,7 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    font-size: 24px;
-    text-align: center;
-    line-height: 200px;
     display: flex;
-
 }
 
 .box > div img {

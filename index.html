@@ -2,8 +2,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width， initial-scale=1.0">
-    <title>Personal Design Website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Observer</title>
     <link rel="stylesheet" href="style/index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -25,7 +25,7 @@
     </div>
     <!-- Header design -->
     <header class="header">
-        <h1><a href="#" class="header-logo">Personal Design</a></h1>
+        <h1><a href="#" class="header-logo">Observer</a></h1>
         <nav class="header-navbar" id="header-navbar">
             <ul>
                 <li><a class="navbar-link active" onclick="handleFocus(this)" href="#home">Home</a></li>
@@ -42,14 +42,19 @@
                 <h1 id="typing-effect"></h1>
                 <h1 class="typing-flashing">|</h1>
             </div>
-            <h2>本站構建為HTML/CSS/JavaScript/JQuery</h2>
             <hr>
             <h2>主要作品應用</h2>
             <div class="text-rotate">
                 <h3>React</h3>
             </div>
             <div class="text-rotate">
+                <h3>TypeScript</h3>
+            </div>
+            <div class="text-rotate">
                 <h3>Bootstrap</h3>
+            </div>
+            <div class="text-rotate">
+                <h3>Styled Component</h3>
             </div>
             <div class="text-rotate">
                 <h3>Nodejs</h3>
@@ -112,9 +117,11 @@
             </p>
             <h2>有什麼作品?</h2>
             <p>
-                目前設計了一個服飾購物網站，前端架設在Github,後端架設
-                在Heroku,主要架構為React Hooks和Bootsrap，後端搭配
-                Nodejs連接MongoDb做資料請求，細節請見作品。
+                服飾購物網站:前端架設在Github，後端架設
+                在Heroku，主要架構為React Hooks和Bootstrap，後端搭配
+                Nodejs連接MongoDb做資料請求。
+                圖片瀏覽網站:完整使用TS，主要應用為滾動加載圖片，非對稱排列，無使用任何套件。
+                抽獎轉盤:組件使用Style-component，扇形面積按獎品數動態分配。
             </p>
         </div>
         <figure class="ball">
@@ -124,12 +131,12 @@
     <section class="project" id="project">
         <div class="project-content">
             <h1>Project</h1>
+            <h2>Wave Sight</h2>
             <div class="project-link">
-                <h2><a href="https://felixmitsui.github.io/wave-sight/" target="_blank">作品連結</a></h2>
+                <h2><a href="https://felixmitsui.github.io/wave-sight" target="_blank">作品連結</a></h2>
                 <i class='bx bx-pointer'></i>
                 <p>帳號:guest006@gmail.com<br>密碼:azure006006</p>
             </div>
-            <h2>Wave Sight</h2>
             <div class="project-carousel">
                 <button id="left" onclick="carouselFirst.handleToggleCarousel(event)"><i
                         class='bx bxs-chevron-left'></i></button>
@@ -169,6 +176,10 @@
                 </div>
             </div>
             <h2>Infinite Hoisting</h2>
+            <div class="project-link">
+                <h2><a href="https://37dpk5.csb.app/" target="_blank">作品連結</a></h2>
+                <i class='bx bx-pointer'></i>
+            </div>
             <div class="project-carousel">
                 <button id="left" onclick="carouselSecond.handleToggleCarousel(event)"><i
                         class='bx bxs-chevron-left'></i></button>
@@ -189,11 +200,17 @@
                     </figure>
                 </div>
             </div>
-        </div>
+            <h2>Raffle Wheel</h2>
+            <div class="project-link">
+                <h2><a href="https://k8zm4q.csb.app/" target="_blank">作品連結</a></h2>
+                <i class='bx bx-pointer'></i>
+            </div>
+            <figure class="raffle-wheel"><img src="./images/raffle_wheel/2023-05-04-185148.png" alt=""></figure>
     </section>
-
-    <script src="index.js"></script>
-    <script src="jumpBar.js"></script>
+    <script src="./tools/methods.js"></script>
+    <script src="./class/carousel.js"></script>
+    <script src="./index.js"></script>
+    <script src="./jumpBar.js"></script>
 </body>
 
 </html>
