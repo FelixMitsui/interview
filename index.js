@@ -1,6 +1,8 @@
 
 const carouselFirst = new Carousel('#carousel-first');
 const carouselSecond = new Carousel('#carousel-second');
+const carouselThree = new Carousel('#carousel-three');
+
 function debounce(fn, delay) {
     let timeId = null;
 
@@ -11,7 +13,6 @@ function debounce(fn, delay) {
         }, delay);
     };
 }
-
 
 $(document).ready(() => {
     carouselFirst.resetCarousel();
@@ -75,7 +76,7 @@ function handleScroll() {
     }
 }
 
-const texts = ["無相關工作經驗", "無參加訓練課程"];
+const texts = ["學習之路", "永不停歇"];
 const typingSpeed = 180;
 const deletionSpeed = 180;
 const pauseDuration = 1500;
