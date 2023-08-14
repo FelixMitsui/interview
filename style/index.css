@@ -230,11 +230,18 @@ section {
   text-decoration-color: var(--main-clor);
 }
 
+.about-content h3 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
 .about-content p {
   font-family: 'Noto Sans HK', sans-serif;
   font-weight: 400;
   margin-right: 5rem;
   word-wrap: break-word;
+  margin: 1rem 0;
 }
 
 
