@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!--gloal design-->
+    <!--global design-->
     <div class="jump-bar"></div>
     <i class='bx bxs-to-top' onclick="handleScroll()"></i>
     <div class="expand-img">
@@ -114,9 +114,9 @@
                 範例時，不會覺得難懂，反而覺得有趣，接著就
                 開始建立了興趣．
             </p>
-            <h2>為何說目標是網頁開發而不是前後端?</h2>
+            <h2>為何選擇前端開發?</h2>
             <p>
-                前後端都是撰寫程式的過程，所以不會特別要求自己一定要
+                前後端的目的都是為了讓訊息傳遞到網頁上，所以不會特別要求自己一定要
                 定位在某個特定位置，差別只在於本身對於前端的適性較高,
                 因為本身對於色彩，佈局的感官比較敏銳，所以前端方面的
                 適性會比較符合，不過，後端的相關知識也是必須的．
@@ -150,6 +150,11 @@
             <p>
                 抽獎轉盤: 組件使用Style-component，扇形面積按獎品數動態分配。
             </p>
+            <hr>
+            <p>
+                即時聊天室: 主要運用socket.io，達到訊息雙向傳輸。
+            </p>
+
         </div>
         <figure class="ball">
             <span class="iris"></span>
@@ -249,13 +254,13 @@
                         <img onclick="expandImage(this,event)" src="./images/vote/vote_113804.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this)" src="./images/vote/vote_113915.png" alt="">
+                        <img onclick="expandImage(this,event)" src="./images/vote/vote_113915.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this)" src="./images/vote/vote_120348.png" alt="">
+                        <img onclick="expandImage(this,event)" src="./images/vote/vote_120348.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this)" src="./images/vote/vote_132620.png" alt="">
+                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132620.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -265,6 +270,12 @@
                 <i class='bx bx-pointer'></i>
             </div>
             <figure class="raffle-wheel"><img src="./images/raffle_wheel/2023-05-04-185148.png" alt=""></figure>
+            <h2>SocketIO Chat</h2>
+            <div class="project-link">
+                <h2><a href="https://codesandbox.io/p/sandbox/socket-io-chat-c4vywc" target="_blank">作品連結</a></h2>
+                <i class='bx bx-pointer'></i>
+            </div>
+            <figure class="raffle-wheel"><img src="./images/chat/chat_223708.png" alt=""></figure>
     </section>
     <script src="./tools/methods.js"></script>
     <script src="./class/carousel.js"></script>
