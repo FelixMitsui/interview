@@ -109,24 +109,21 @@
             <h1>About Me</h1>
             <h2>為何開始寫程式?</h2>
             <p>
-                就學時，有寫過靜態網頁，但是一直沒有真正深入研究，直到跟同學一起製作遊戲，
-                參與了C#編程，不過主要專注在UI設計與遊戲企劃的部分。畢業後，沒有走遊戲設計
-                這條路，是因為遊戲業界，程式設計的職缺較多，當時對於程式編程沒有方向，所以
-                畢業之後就沒有往程式這塊去嘗試。
-                直到近年，開始注意到網頁開發相關的資訊，選擇使用React嘗試開發網站，發現搭配函式庫
-                的情況下，開發效率提高許多，也逐漸對網頁開發建立起了興趣。
+                就學時，程式相關課程，有學習C語言、Java等，不過都只是寫一些基礎的用法，並沒有延伸到應用。接著在大四時，
+                跟同學合作開發遊戲，負責遊戲企劃和UI設計跟介面相關的C#程式碼。
+                退伍後，由於遊戲企劃的面試機會不多，就先找了物流業的工作，在數年的工作中，有想過要回頭寫看看程式，發現可
+                以從網頁著手，直到去年底，決定辭職投入網頁開發，一直到目前為止，已經累積了一年以上的獨立開發經驗。
             </p>
             <h2>為何選擇前端開發?</h2>
             <p>
-                前後端的目的都是為了讓訊息傳遞到網頁上，所以不會特別要求自己一定要
-                定位在某個特定位置，差別只在於本身對於前端的適性較高,
-                因為本身對於色彩，佈局的感官比較敏銳，所以前端方面的
-                適性會比較符合，不過，後端的相關知識也是必須的。
+                剛開始是寫React，後端的部分只有使用Node環境，雖然mysql跟mongodb都有接觸，
+                但是對於後端的掌握度還是沒有那麼高，所以從前端起步，會較於合適。
             </p>
             <h2>對自己有甚麼期許?</h2>
             <p>
-                學習更多新的技術，希望能夠充分掌握複雜網站的整個建構流程．
-                這對於團隊溝通上，能減少障礙，甚至能給予團隊較佳的決策．
+                目標是能真正的全端開發，所以後續打算接觸Java spring boot，
+                並且持續跟上最新的技術，希望能用較短的時間拉近跟業界之間得差
+                距。
             </p>
             <h2>有什麼作品?</h2>
             <h3>所有作品皆使用React Hooks</h3>
@@ -134,29 +131,25 @@
             <p>
                 服飾購物網站: 樣式使用了React component，狀態管理為redux saga，後端搭配
                 Nodejs連接MongoDb做資料請求。
-                <br>前台功能主要為:登入 註冊 修改用戶資料 加入購物車 提交訂單。
+                <br>前台功能主要為:登入 註冊 修改用戶資料 加入購物車 提交訂單 客服通信。
                 <br>後台功能主要為:創建商品 編輯商品 編輯用戶，圖片上傳。
             </p>
             <hr>
             <p>
                 投票網站: 使用next，最新的13版本，以最新的app資料夾路由架構管理路由，資料庫為Mysql，搭配Prisma操作資料，樣式使用Tailwind，
                 在這個專案有使用Jest測試部分組件的功能。
-                <br>前台功能主要為:Google登入 註冊 投票 顯示文章。
+                <br>前台功能主要為:Google登入 註冊 投票 顯示文章 投票分布圖表。
                 <br>後台功能主要為:創建投票項目 編輯投票項目。
             </p>
             <hr>
             <p>
-                圖片瀏覽網站: 主要應用為滾動加載圖片，非對稱排列，無使用任何套件。
+                圖片瀏覽網站: 主要應用為滾動加載圖片。
             </p>
             <hr>
             <p>
                 抽獎轉盤: 組件使用Style-component，扇形面積按獎品數動態分配。
             </p>
             <hr>
-            <p>
-                即時聊天室: 主要運用socket.io，達到訊息雙向傳輸。
-            </p>
-
         </div>
         <figure class="ball">
             <span class="iris"></span>
@@ -180,7 +173,10 @@
                         class='bx bxs-chevron-right'></i></button>
                 <div id="carousel-first" class="carousel-wrap">
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/2023-05-02-011628.png" alt="首頁">
+                        <img onclick="expandImage(event)" src="./images/wight_035236.png" alt="客服功能">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(event)" src="./images/2023-05-02-011628.png" alt="首頁">
                     </figure>
                     <figure>
                         <img onclick="expandImage(this,event)" src="./images/2023-05-02-011749.png" alt="商品分頁">
@@ -223,16 +219,16 @@
                         class='bx bxs-chevron-right'></i></button>
                 <div id="carousel-second" class="carousel-wrap">
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/NH/2023-07-01-194447.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/NH/2023-07-01-194447.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/NH/2023-07-01-194630.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/NH/2023-07-01-194630.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this)" src="./images/NH/2023-07-01-194709.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/NH/2023-07-01-194709.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this)" src="./images/NH/2023-07-01-194829.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/NH/2023-07-01-194829.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -248,25 +244,25 @@
                         class='bx bxs-chevron-right'></i></button>
                 <div id="carousel-three" class="carousel-wrap">
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132620.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132620.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132621.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132621.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132622.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132622.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132623.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132623.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132624.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132624.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132625.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132625.png" alt="">
                     </figure>
                     <figure>
-                        <img onclick="expandImage(this,event)" src="./images/vote/vote_132626.png" alt="">
+                        <img onclick="expandImage(event)" src="./images/vote/vote_132626.png" alt="">
                     </figure>
                 </div>
             </div>
@@ -276,12 +272,6 @@
                 <i class='bx bx-pointer'></i>
             </div>
             <figure class="raffle-wheel"><img src="./images/raffle_wheel/2023-05-04-185148.png" alt=""></figure>
-            <h2>SocketIO Chat</h2>
-            <div class="project-link">
-                <h2><a href="https://codesandbox.io/p/sandbox/socket-io-chat-c4vywc" target="_blank">作品連結</a></h2>
-                <i class='bx bx-pointer'></i>
-            </div>
-            <figure class="raffle-wheel"><img src="./images/chat/chat_223708.png" alt=""></figure>
     </section>
     <script src="./tools/methods.js"></script>
     <script src="./class/carousel.js"></script>

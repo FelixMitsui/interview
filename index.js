@@ -15,11 +15,16 @@ function debounce(fn, delay) {
 }
 
 $(document).ready(() => {
-    carouselFirst.resetCarousel();
-    carouselSecond.resetCarousel();
+
+    carouselFirst.handleTouchCarousel();
+    carouselSecond.handleTouchCarousel();
+    carouselThree.handleTouchCarousel();
+
     $(window).on('resize', debounce(() => {
+
         carouselFirst.resetCarousel();
         carouselSecond.resetCarousel();
+        carouselThree.resetCarousel();
 
         if ($(window).width() >= 992) {
             console.log($(window).width() >= 992)
@@ -51,11 +56,16 @@ $(document).ready(() => {
             $('a[href="#home"]').addClass('active');
         }
     });
+
 })
 
-function expandImage(image, event) {
-    $("#project-img").attr('src', image.src);
+function expandImage(event) {
+
+    if (!event.target?.src) return;
+
+    $("#project-img").attr('src', event.target.src);
     $(".expand-img").css('display', 'flex');
+
 }
 
 function CollapseImage() {
