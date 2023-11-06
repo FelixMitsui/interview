@@ -80,6 +80,9 @@ class Carousel {
 
         this.carouselWrap.on("mouseup touchend", (event) => {
 
+            isDragging = false;
+            this.carouselWrap.off("mousemove touchmove");
+
             console.log(currentX)
             if (currentX === 0) {
                 this.expandImage(event);
@@ -88,7 +91,7 @@ class Carousel {
                 return;
             }
 
-            isDragging = false;
+
 
             if (Math.abs(this.positionX - this.containerWidth) >= this.maxPositionX && deltaX >= 0) {
                 this.positionX = -this.maxPositionX;
@@ -118,7 +121,7 @@ class Carousel {
                 'transform': `translate3d(${this.positionX}px, 0, 0)`,
             });
 
-            this.carouselWrap.off("mousemove touchmove");
+
         });
     }
 
