@@ -132,7 +132,14 @@
                 距。
             </p>
             <h2>有什麼作品?</h2>
-            <h3>所有作品皆使用React Hooks</h3>
+            <p>
+                倉儲後台管理
+                <br>
+                1.新增用戶、查詢、變更權限、刪除。
+                2.新增商品、查詢、刪除。
+                3.進貨申請、商品入庫。
+                4.庫存查詢、變更儲位。
+            </p>
             <hr>
             <p>
                 服飾購物網站: 樣式使用了React component，狀態管理為redux saga，後端搭配
@@ -164,6 +171,30 @@
     <section class="project" id="project">
         <div class="project-content">
             <h1>Project</h1>
+            <h2>Warehouse_manage</h2>
+            <div class="project-link">
+                <h2><a href="https://github.com/FelixMitsui/warehouse-manage" target="_blank">Github</a></h2>
+                <i class='bx bx-pointer'></i>
+                <h2><a href="https://warehouse-manage.vercel.app/" target="_blank">作品連結</a></h2>
+                <i class='bx bx-pointer'></i>
+            </div>
+            <div class="project-carousel">
+                <button id="left" onclick="carouselFirst.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-left'></i></button>
+                <button id="right" onclick="carouselFirst.handleToggleCarousel(event)"><i
+                        class='bx bxs-chevron-right'></i></button>
+                <div id="carousel-first" class="carousel-wrap">
+                    <figure>
+                        <img onclick="expandImage(event)" src="./images/warehouse_manage/193342.png">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(event)" src="./images/warehouse_manage/193556.png">
+                    </figure>
+                    <figure>
+                        <img onclick="expandImage(event)" src="./images/warehouse_manage/193843.png">
+                    </figure>
+                </div>
+            </div>
             <h2>Wave Sight</h2>
             <div class="project-link">
                 <h2><a href="https://github.com/FelixMitsui/wave-sight/tree/main" target="_blank">Github</a></h2>
