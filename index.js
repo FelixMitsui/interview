@@ -2,7 +2,7 @@
 const carouselFirst = new Carousel('#carousel-first');
 const carouselSecond = new Carousel('#carousel-second');
 const carouselThree = new Carousel('#carousel-three');
-
+const carouselFour = new Carousel('#carousel-four');
 function debounce(fn, delay) {
     let timeId = null;
 
@@ -19,13 +19,13 @@ $(document).ready(() => {
     carouselFirst.handleTouchCarousel();
     carouselSecond.handleTouchCarousel();
     carouselThree.handleTouchCarousel();
-
+    carouselFour.handleTouchCarousel();
     $(window).on('resize', debounce(() => {
 
         carouselFirst.resetCarousel();
         carouselSecond.resetCarousel();
         carouselThree.resetCarousel();
-
+        carouselFour.resetCarousel();
         if ($(window).width() >= 992) {
             console.log($(window).width() >= 992)
             $('#header-navbar').show(500);
